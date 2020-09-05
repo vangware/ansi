@@ -1,7 +1,7 @@
 {
   "name": "@vangware/forcli",
   "description": "CLI ANSI formatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
