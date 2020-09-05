@@ -1,7 +1,7 @@
-import { format } from "./format";
+import { optionalFormat } from "./optionalFormat";
 
-const backgroundColor = format(49);
-const textColor = format(39);
+const backgroundColor = optionalFormat(49);
+const textColor = optionalFormat(39);
 
 // Background colors
 export const blackBackground = backgroundColor(40);
@@ -26,10 +26,10 @@ export const grayText = textColor(90);
 export const greyText = grayText;
 
 // Text modifiers
-export const bold = format(22)(1);
-export const dimmed = format(22)(2);
-export const hidden = format(28)(8);
-export const inverse = format(27)(7);
-export const italic = format(23)(3);
-export const strikethrough = format(29)(9);
-export const underlined = format(24)(4);
+export const bold = optionalFormat(22)(1);
+export const dimmed = optionalFormat(22)(2);
+export const hidden = optionalFormat(28)(8);
+export const inverse = optionalFormat(27)(7);
+export const italic = optionalFormat(23)(3);
+export const strikethrough = optionalFormat(29)(9);
+export const underlined = optionalFormat(24)(4);
