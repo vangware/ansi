@@ -32,4 +32,4 @@ export const hidden = format(28)(8);
 export const inverse = format(27)(7);
 export const italic = format(23)(3);
 export const strikethrough = format(29)(9);
-export const underline = format(24)(4);
+export const underlined = format(24)(4);
