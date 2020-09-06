@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.1
+
+- :pencil2: fix remaining master references.
+
 ## 1.1.0
 
 - :building_construction: change formats to be ignored when env ask for no colors.
