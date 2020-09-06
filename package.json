@@ -1,7 +1,7 @@
 {
   "name": "@vangware/forcli",
-  "description": "CLI ANSI formatter",
-  "version": "1.1.0",
+  "description": "Functional CLI ANSI formatter",
+  "version": "1.1.1",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -15,7 +15,7 @@
     "@types/prettier": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
-    "@vangware/base": "^2.0.3",
+    "@vangware/base": "^2.0.4",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-node": "^0.3.4",
@@ -41,10 +41,11 @@
     }
   },
   "keywords": [
-    "cli",
     "ansi",
+    "cli",
+    "colors",
     "format",
-    "colors"
+    "functional"
   ],
   "license": "MIT",
   "main": "./cjs/index.js",
