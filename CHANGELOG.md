@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.6
+
+- :bug: fix bug with `files` field in `package.json`.
+
 ## 1.1.5
 
 - :arrow_up: dependency upgrade.
