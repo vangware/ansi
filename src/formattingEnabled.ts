@@ -2,13 +2,14 @@
  * Given a NodeJS `process`, return `true` if colors are enabled.
  * @param process NodeJS `process`.
  */
-export const formattingEnabled = (process: NodeJS.Process) =>
-	typeof process === "undefined" ||
-	(!process.env.NODE_DISABLE_COLORS &&
-		!process.env.NODE_DISABLE_COLORS &&
-		process.env.TERM !== "dumb" &&
-		// eslint-disable-next-line no-null/no-null
-		(![null, undefined, "0"].some(
-			value => process.env.FORCE_COLOR === value
-		) ||
-			process.stdout.isTTY));
+export const formattingEnabled = ({
+	env: { FORCE_COLOR, NODE_DISABLE_COLORS, NO_COLOR, TERM } = {},
+	stdout: { isTTY } = { isTTY: false }
+}: {
+	readonly env?: typeof process.env;
+	readonly stdout?: Pick<typeof process.stdout, "isTTY">;
+} = {}) =>
+	!NODE_DISABLE_COLORS &&
+	!NO_COLOR &&
+	TERM !== "dumb" &&
+	(!FORCE_COLOR || isTTY);
