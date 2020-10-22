@@ -4,5 +4,8 @@
     "module": "ESNext",
     "outDir": "./esm",
     "target": "ESNext"
-  }
+  },
+  "exclude": [
+    "tests/**/*"
+  ]
 }
