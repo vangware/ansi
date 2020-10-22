@@ -69,6 +69,7 @@
     "compile": "run-s compile:*",
     "compile:cjs": "tsc --project tsconfig.cjs.json",
     "compile:esm": "tsc --project tsconfig.esm.json",
+    "coverage": "c8 report --reporter=text-lcov | coveralls",
     "docs": "typedoc --gitRevision main --mode file --out ./docs ./src/index.ts",
     "lint": "eslint src/**/*.ts",
     "pre-compile": "run-s pre-compile:*",
