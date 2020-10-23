@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.11
+
+- :arrow_up: dependency upgrade.
+- :construction_worker: changed Travis with GitHub Actions.
+
 ## 1.1.10
 
 - :arrow_up: dependency upgrade.

@@ -1,6 +1,6 @@
 ![@vangware/forcli](https://i.imgur.com/CFLNpNS.png)
 
-![Build Status](https://img.shields.io/travis/vangware/forcli.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://travis-ci.org/github/vangware/forcli)
+![Build Status](https://img.shields.io/github/workflow/status/vangware/forcli/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/forcli/actions)
 ![Coverage](https://img.shields.io/coveralls/github/vangware/forcli.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/forcli)
 ![License](https://img.shields.io/npm/l/@vangware/forcli.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/forcli/blob/main/LICENSE)
 ![NPM Version](https://img.shields.io/npm/v/@vangware/forcli.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/forcli)
