@@ -1,7 +1,7 @@
 {
   "name": "@vangware/forcli",
   "description": "🎨 Functional CLI ANSI formatter",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "author": {
     "name": "Vangware",
     "url": "https://vangware.com"
@@ -16,7 +16,7 @@
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "@vangware/base": "^4.1.6",
-    "@vangware/test": "^5.0.2",
+    "@vangware/test": "^5.0.3",
     "c8": "^7.3.5",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
