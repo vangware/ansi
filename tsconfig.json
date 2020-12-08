@@ -8,6 +8,7 @@
     "newLine": "LF",
     "noEmitOnError": true,
     "noUnusedLocals": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedParameters": true,
     "outDir": "./cjs",
     "preserveConstEnums": true,
