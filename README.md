@@ -40,6 +40,10 @@ And then:
 ```js
 import { whiteText, redBackground, bold, mix } from "@vangware/forcli";
 
+// You can just use the styles
+console.log(redBackground("Red background text"));
+
+// Or you can mix them!
 const warningText = mix([whiteText, redBackground, bold]);
 
 console.log(warningText("Warning!"));
