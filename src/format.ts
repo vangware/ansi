@@ -6,14 +6,16 @@ import { ansi } from "./ansi";
  * @param close Close value.
  * @returns Curried function with `close` in context.
  */
-export const format = (close: number) =>
+export const format =
+	(close: number) =>
 	/**
 	 * @param open Open value.
 	 * @returns Curried function with `open` and `close` in context.
 	 */
 	(open: number) =>
-		/**
-		 * @param source Source string to be wrapped by `open` and `close`.
-		 * @returns Formatted `source`.
-		 */
-		(source: string) => `${ansi(open)}${source}${ansi(close)}`;
+	/**
+	 * @param source Source string to be wrapped by `open` and `close`.
+	 * @returns Formatted `source`.
+	 */
+	(source: string) =>
+		`${ansi(open)}${source}${ansi(close)}`;
