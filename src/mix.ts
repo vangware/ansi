@@ -2,6 +2,8 @@ import type { format } from "./format";
 
 /**
  * Composes formatters.
+ *
+ * @category Common
  * @param formatters Array of formatters to be composed.
  */
 export const mix =
