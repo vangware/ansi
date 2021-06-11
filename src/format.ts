@@ -3,6 +3,8 @@ import { ansi } from "./ansi";
 /**
  * Given an `open`, a `close` value and a `source` string, return formatted
  * `source` (surrounded by `open` and `close`).
+ *
+ * @category Common
  * @param close Close value.
  * @returns Curried function with `close` in context.
  */

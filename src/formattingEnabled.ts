@@ -1,5 +1,7 @@
 /**
  * Given a NodeJS `process`, return `true` if colors are enabled.
+ *
+ * @category Common
  * @param process NodeJS `process`.
  */
 export const formattingEnabled = ({

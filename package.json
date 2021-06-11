@@ -1,13 +1,13 @@
 {
-	"name": "@vangware/forcli",
-	"description": "🎨 Functional CLI ANSI formatter",
-	"version": "1.3.1",
+	"name": "@vangware/ansi",
+	"description": "📟 Functional CLI ANSI formatter",
+	"version": "1.0.0",
 	"author": {
 		"name": "Vangware",
 		"url": "https://vangware.com"
 	},
 	"bugs": {
-		"url": "https://github.com/vangware/forcli/issues"
+		"url": "https://github.com/vangware/ansi/issues"
 	},
 	"devDependencies": {
 		"@types/eslint": "7.2.13",
@@ -16,7 +16,6 @@
 		"@typescript-eslint/eslint-plugin": "4.26.1",
 		"@typescript-eslint/parser": "4.26.1",
 		"@vangware/base": "4.7.3",
-		"@vangware/test": "^5.2.1",
 		"c8": "^7.7.2",
 		"eslint": "7.28.0",
 		"eslint-config-prettier": "8.3.0",
@@ -31,6 +30,7 @@
 		"npm-run-all": "^4.1.5",
 		"prettier": "2.3.1",
 		"rimraf": "^3.0.2",
+		"ts-node": "^10.0.0",
 		"typedoc": "0.21.0-beta.2",
 		"typescript": "4.3.2"
 	},
@@ -44,7 +44,7 @@
 		"cjs",
 		"esm"
 	],
-	"homepage": "https://forcli.vangware.com",
+	"homepage": "https://ansi.vangware.com",
 	"husky": {
 		"hooks": {
 			"pre-commit": "run-s clean pre-compile lint test docs"
@@ -62,7 +62,7 @@
 	"module": "./esm/index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/vangware/forcli.git"
+		"url": "git+ssh://git@github.com/vangware/ansi.git"
 	},
 	"scripts": {
 		"clean": "rimraf ./{cjs,esm}",
@@ -78,7 +78,7 @@
 		"pre-compile:esm": "tsc --noemit --project tsconfig.esm.json",
 		"prepublishOnly": "run-s compile prettify",
 		"prettify": "prettier --write --loglevel warn './{cjs,esm}/**/*.{js,ts}'",
-		"test": "c8 --reporter=html --reporter=text-summary --reporter=lcov test"
+		"test": "c8 --reporter=html --reporter=text-summary --reporter=lcov ts-node ./tests"
 	},
 	"source": "./src/index.ts",
 	"types": "./esm/index.d.ts"

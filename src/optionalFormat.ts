@@ -4,6 +4,8 @@ import { formattingEnabled } from "./formattingEnabled";
 /**
  * Impure version of `format` which changes depending on the current NodeJS
  * `process` environment.
+ *
+ * @category Common
  * @param process NodeJS `process`.
  */
 export const optionalFormat = formattingEnabled(process)
