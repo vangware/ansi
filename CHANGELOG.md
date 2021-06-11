@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.0.0
+
+-   :truck: rename of package from `forcli` to `ansi`.
+-   :white_check_mark: update test to use node's instead of @vangware/test.
+-   :building_construction: change all formats to their own files.
+-   :truck: rename colorText to foregroundColor.
+-   :truck: rename colorBackground to backgroundColor.
+
 ## 1.3.1
 
 -   :arrow_up: dependency upgrade.
