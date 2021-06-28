@@ -2,7 +2,7 @@ import { FOREGROUND_DEFAULT } from "./codes";
 import { optionalFormat } from "./optionalFormat";
 
 /**
- * Takes an `open` ANSI code and a `source` string and adds the open and close
+ * Takes an `open` ANSI code and an `input` string and adds the open and close
  * ANSI codes to that string (for text color).
  *
  * @category Foreground
