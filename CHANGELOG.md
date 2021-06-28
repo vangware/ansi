@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.0
+
+-   :arrow_up: dependency upgrade.
+-   :label: improve types for functions.
+-   :bug: fix bug with `formattingEnabled`.
+-   :bug: fix bug with `mix` (should use `reduce` instead of `reduceRight`).
+
 ## 1.0.3
 
 -   :arrow_up: dependency upgrade.

@@ -1,23 +1,23 @@
 import { ansi } from "./ansi";
 
 /**
- * Given an `open`, a `close` value and a `source` string, return formatted
- * `source` (surrounded by `open` and `close`).
+ * Given an `open`, a `close` value and an `input` string, return formatted
+ * `input` (surrounded by `open` and `close`).
  *
  * @category Common
  * @param close Close value.
  * @returns Curried function with `close` in context.
  */
 export const format =
-	(close: number) =>
+	<Close extends number>(close: Close) =>
 	/**
 	 * @param open Open value.
 	 * @returns Curried function with `open` and `close` in context.
 	 */
-	(open: number) =>
+	<Open extends number>(open: Open) =>
 	/**
-	 * @param source Source string to be wrapped by `open` and `close`.
-	 * @returns Formatted `source`.
+	 * @param input Input string to be wrapped by `open` and `close`.
+	 * @returns Formatted `input`.
 	 */
-	(source: string) =>
-		`${ansi(open)}${source}${ansi(close)}`;
+	<Input extends string>(input: Input) =>
+		`${ansi(open)}${input}${ansi(close)}` as const;
