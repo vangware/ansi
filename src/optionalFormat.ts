@@ -10,4 +10,7 @@ import { formattingEnabled } from "./formattingEnabled";
  */
 export const optionalFormat = formattingEnabled(process)
 	? format
-	: (_close: number) => (_open: number) => (source: string) => source;
+	: (_close: number) =>
+			(_open: number) =>
+			<Input extends string>(input: Input) =>
+				input;
