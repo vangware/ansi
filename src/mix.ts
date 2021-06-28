@@ -8,9 +8,9 @@ import type { format } from "./format";
  */
 export const mix =
 	(formatters: ReadonlyArray<ReturnType<ReturnType<typeof format>>>) =>
-	(source: string) =>
-		formatters.reduceRight(
+	(input: string) =>
+		formatters.reduce(
 			// eslint-disable-next-line max-params
 			(output, formatter) => formatter(output),
-			source
+			input
 		);

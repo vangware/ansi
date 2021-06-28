@@ -29,6 +29,22 @@ export default [
 	),
 	deepEqual(
 		formattingEnabled({
+			env: { FORCE_COLOR: "0" },
+			stdout: { isTTY: true }
+		}),
+		true,
+		"Given a process mock FORCE_COLOR 0 and isTTY, must return true"
+	),
+	deepEqual(
+		formattingEnabled({
+			env: { FORCE_COLOR: "0" },
+			stdout: { isTTY: false }
+		}),
+		false,
+		"Given a process mock FORCE_COLOR 0 and no isTTY, must return false"
+	),
+	deepEqual(
+		formattingEnabled({
 			env: { FORCE_COLOR: "1" },
 			stdout: { isTTY: true }
 		}),
@@ -40,7 +56,7 @@ export default [
 			env: { FORCE_COLOR: "1" },
 			stdout: { isTTY: false }
 		}),
-		false,
-		"Given a process mock FORCE_COLOR 1 and no isTTY, must return false"
+		true,
+		"Given a process mock FORCE_COLOR 1 and no isTTY, must return true"
 	)
 ];
