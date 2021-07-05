@@ -1,4 +1,4 @@
-![@vangware/ansi](https://i.imgur.com/SeAHpKe.png)
+<img alt="Vangware's ANSI logo" src="./logo.svg" height="192" />
 
 ![Build Status](https://img.shields.io/github/workflow/status/vangware/ansi/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/actions)
 ![Coverage](https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/ansi)
