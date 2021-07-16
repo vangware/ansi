@@ -1,5 +1,3 @@
-import type { format } from "./format";
-
 /**
  * Composes formatters.
  *
@@ -7,8 +5,7 @@ import type { format } from "./format";
  * @param formatters Array of formatters to be composed.
  */
 export const mix =
-	(formatters: ReadonlyArray<ReturnType<ReturnType<typeof format>>>) =>
-	(input: string) =>
+	(formatters: ReadonlyArray<(input: string) => string>) => (input: string) =>
 		formatters.reduce(
 			// eslint-disable-next-line max-params
 			(output, formatter) => formatter(output),
