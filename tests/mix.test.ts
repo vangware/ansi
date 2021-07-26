@@ -1,4 +1,4 @@
-import { deepEqual } from "assert/strict";
+import { deepEqual } from "node:assert/strict";
 import { format } from "../src/format";
 import { mix } from "../src/mix";
 
