@@ -1,4 +1,4 @@
-import { deepEqual } from "assert/strict";
+import { deepEqual } from "node:assert/strict";
 import { ansi } from "../src/ansi";
 
 export default deepEqual(

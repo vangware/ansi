@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 1.1.5
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: update node imports to have `node:` prepend.
+
 ## 1.1.4
 
 -   :arrow_up: dependency upgrade.
