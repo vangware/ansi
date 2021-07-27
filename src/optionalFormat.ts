@@ -1,5 +1,5 @@
-import { format } from "./format";
-import { formattingEnabled } from "./formattingEnabled";
+import { format } from "./format.js";
+import { formattingEnabled } from "./formattingEnabled.js";
 
 /**
  * Impure version of `format` which changes depending on the current NodeJS
