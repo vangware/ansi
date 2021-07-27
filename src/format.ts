@@ -1,4 +1,4 @@
-import { ansi } from "./ansi";
+import { ansi } from "./ansi.js";
 
 /**
  * Given an `open`, a `close` value and an `input` string, return formatted
