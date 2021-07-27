@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 This project uses [Gitmoji](https://gitmoji.carloscuesta.me/)
 
+## 2.0.0
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: update imports to have extension.
+-   :building_construction: update outDir to single `dist` directory.
+
 ## 1.1.5
 
 -   :arrow_up: dependency upgrade.

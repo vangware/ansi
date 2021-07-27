@@ -1,5 +1,5 @@
-import { backgroundColor } from "./backgroundColor";
-import { BACKGROUND_WHITE } from "./codes";
+import { backgroundColor } from "./backgroundColor.js";
+import { BACKGROUND_WHITE } from "./codes.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **white** background.
