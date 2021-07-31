@@ -19,6 +19,9 @@ jobs:
                   version: 6.x
                   run_install: true
 
+            - name: Compile
+              run: pnpx tsc --project tsconfig.require.json
+
             - name: Run tests
               run: pnpm test
 
