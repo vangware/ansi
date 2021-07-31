@@ -1,0 +1,14 @@
+pre-push:
+    commands:
+        clean:
+            run: rimraf ./dist
+        compile-import:
+            run: tsc --project tsconfig.import.json
+        compile-require:
+            run: tsc --project tsconfig.require.json
+        lint:
+            run: eslint {src,tests}/**/*.ts
+        test:
+            run: c8 --reporter=html --reporter=text-summary --reporter=lcov ts-node ./tests
+        document:
+            run: typedoc --disableOutputCheck --gitRevision main --theme minimal ./src/index.ts
