@@ -2849,8 +2849,7 @@ img {
 				<img src="https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/ansi" alt="Coverage">
 				<img src="https://img.shields.io/npm/l/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/blob/main/LICENSE" alt="License">
 				<img src="https://img.shields.io/npm/v/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/ansi" alt="NPM Version">
-				<img src="https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/issues" alt="Open Issues">
-			<img src="https://img.shields.io/bundlephobia/minzip/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&label=size&link=https://bundlephobia.com/result?p=@vangware/ansi" alt="Size"></p>
+			<img src="https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/issues" alt="Open Issues"></p>
 			<p>📟 Functional CLI ANSI formatter.</p>
 			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 				<h2>Usage</h2>
@@ -2860,10 +2859,16 @@ img {
 				<h3>Usage as ECMAScript module</h3>
 			</a>
 			<p>🦕 In JS or <a href="https://deno.land/">deno</a>:</p>
-			<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isObject</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;https://cdn.skypack.dev/@vangware/ansi&quot;</span><span style="color: #000000">;</span>
+			<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">foregroundRed</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;https://cdn.skypack.dev/@vangware/ansi&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #795E26">foregroundRed</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;Hello world!&quot;</span><span style="color: #000000">);</span>
 </code></pre>
-			<p>🌎 Or in HTML:</p>
-			<pre><code class="language-html"><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #000000FF"> </span><span style="color: #FF0000">src</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;https://cdn.skypack.dev/@vangware/ansi&quot;</span><span style="color: #800000">&gt;&lt;/script&gt;</span>
+			<p>🌎 Or in the browser:</p>
+			<pre><code class="language-html"><span style="color: #800000">&lt;script</span><span style="color: #000000FF"> </span><span style="color: #FF0000">type</span><span style="color: #000000FF">=</span><span style="color: #0000FF">&quot;module&quot;</span><span style="color: #800000">&gt;</span>
+<span style="color: #000000FF">    </span><span style="color: #AF00DB">import</span><span style="color: #000000FF"> { </span><span style="color: #001080">foregroundRed</span><span style="color: #000000FF"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000FF"> </span><span style="color: #A31515">&quot;https://cdn.skypack.dev/@vangware/ansi&quot;</span><span style="color: #000000FF">;</span>
+
+<span style="color: #000000FF">    </span><span style="color: #795E26">foregroundRed</span><span style="color: #000000FF">(</span><span style="color: #A31515">&quot;Hello world!&quot;</span><span style="color: #000000FF">);</span>
+<span style="color: #800000">&lt;/script&gt;</span>
 </code></pre>
 			<a href="#usage-with-local-installation" id="usage-with-local-installation" style="color: inherit; text-decoration: none;">
 				<h3>Usage with local installation</h3>
@@ -2894,6 +2899,7 @@ img {
 				<h2>Test coverage</h2>
 			</a>
 			<p>Test coverage can be found <a href="https://coveralls.io/github/vangware/ansi">HERE</a>.</p>
+			<!-- Reference -->
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
