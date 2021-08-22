@@ -1,5 +1,5 @@
-import { INVERT, NOT_INVERT } from "./codes.js";
-import { optionalFormat } from "./optionalFormat.js";
+import { INVERT, NOT_INVERT } from "./codes";
+import { optionalFormat } from "./optionalFormat";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **inverse** text.

@@ -1,5 +1,5 @@
-import { backgroundColor } from "./backgroundColor.js";
-import { BACKGROUND_BRIGHT_GREEN } from "./codes.js";
+import { backgroundColor } from "./backgroundColor";
+import { BACKGROUND_BRIGHT_GREEN } from "./codes";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **bright green**
