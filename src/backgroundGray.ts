@@ -1,5 +1,5 @@
-import { backgroundColor } from "./backgroundColor.js";
-import { BACKGROUND_GRAY } from "./codes.js";
+import { backgroundColor } from "./backgroundColor";
+import { BACKGROUND_GRAY } from "./codes";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **gray** background.

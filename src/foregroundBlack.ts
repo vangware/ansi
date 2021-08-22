@@ -1,5 +1,5 @@
-import { FOREGROUND_BLACK } from "./codes.js";
-import { foregroundColor } from "./foregroundColor.js";
+import { FOREGROUND_BLACK } from "./codes";
+import { foregroundColor } from "./foregroundColor";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **black** foreground.
