@@ -1,5 +1,5 @@
-import { BACKGROUND_DEFAULT } from "./codes.js";
-import { optionalFormat } from "./optionalFormat.js";
+import { BACKGROUND_DEFAULT } from "./codes";
+import { optionalFormat } from "./optionalFormat";
 
 /**
  * Takes an `open` ANSI code and an `input` string and adds the open and close

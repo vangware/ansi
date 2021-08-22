@@ -1,6 +1,6 @@
 import { deepEqual } from "node:assert/strict";
-import { format } from "../dist/require/format.js";
-import { mix } from "../dist/require/mix.js";
+import { format } from "../dist/require/format";
+import { mix } from "../dist/require/mix";
 
 const first = format(13)(13);
 const second = format(42)(42);

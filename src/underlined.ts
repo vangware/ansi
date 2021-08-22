@@ -1,5 +1,5 @@
-import { NOT_UNDERLINE, UNDERLINE } from "./codes.js";
-import { optionalFormat } from "./optionalFormat.js";
+import { NOT_UNDERLINE, UNDERLINE } from "./codes";
+import { optionalFormat } from "./optionalFormat";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **underlined** text.

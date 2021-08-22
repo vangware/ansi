@@ -1,5 +1,5 @@
-import { BOLD, REGULAR } from "./codes.js";
-import { optionalFormat } from "./optionalFormat.js";
+import { BOLD, REGULAR } from "./codes";
+import { optionalFormat } from "./optionalFormat";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **bold** text.

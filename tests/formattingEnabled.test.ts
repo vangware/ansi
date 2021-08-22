@@ -1,5 +1,5 @@
 import { deepEqual } from "node:assert/strict";
-import { formattingEnabled } from "../dist/require/formattingEnabled.js";
+import { formattingEnabled } from "../dist/require/formattingEnabled";
 
 export default [
 	deepEqual(

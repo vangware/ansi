@@ -1,5 +1,5 @@
-import { FOREGROUND_MAGENTA } from "./codes.js";
-import { foregroundColor } from "./foregroundColor.js";
+import { FOREGROUND_MAGENTA } from "./codes";
+import { foregroundColor } from "./foregroundColor";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **magenta** foreground.
