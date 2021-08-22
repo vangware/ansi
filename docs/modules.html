@@ -20,7 +20,7 @@
 			--color-panel-divider: #111;
 			--color-comment-tag: #666;
 			--color-comment-tag-text: #000;
-			--color-code-background: rgba(255, 255, 255, 0.04);
+			--color-code-background: #222;
 			--color-ts: #72b;
 			--color-ts-interface: #2b7;
 			--color-ts-enum: #b72;
@@ -35,6 +35,22 @@
 		}
 		.tsd-widget.menu:before {
 			filter: invert(1);
+		}
+		@media (prefers-color-scheme: light) {
+			:root {
+				--color-background: #eee;
+				--color-text: #222;
+				--color-menu-divider: #eee;
+				--color-menu-divider-focus: #000;
+				--color-panel: #eee;
+				--color-panel-divider: #eee;
+				--color-comment-tag-text: #000;
+				--color-toolbar: #eee;
+				--color-toolbar-text: #333;
+			}
+			.tsd-widget.menu:before {
+				filter: invert(0);
+			}
 		}
 	</style>
 </head>
