@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 2.0.5
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: update c8 to use `.c8rc.json`.
+-   :art: theme update for typedoc.
+
 ## 2.0.4
 
 -   :arrow_up: dependency upgrade.
