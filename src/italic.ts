@@ -1,5 +1,5 @@
-import { ITALIC, NOT_ITALIC } from "./codes.js";
-import { optionalFormat } from "./optionalFormat.js";
+import { ITALIC, NOT_ITALIC } from "./codes";
+import { optionalFormat } from "./optionalFormat";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **italic** text.

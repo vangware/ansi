@@ -1,5 +1,5 @@
-import { backgroundColor } from "./backgroundColor.js";
-import { BACKGROUND_MAGENTA } from "./codes.js";
+import { backgroundColor } from "./backgroundColor";
+import { BACKGROUND_MAGENTA } from "./codes";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **magenta** background.

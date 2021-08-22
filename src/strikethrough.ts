@@ -1,5 +1,5 @@
-import { NOT_STRIKE, STRIKE } from "./codes.js";
-import { optionalFormat } from "./optionalFormat.js";
+import { NOT_STRIKE, STRIKE } from "./codes";
+import { optionalFormat } from "./optionalFormat";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **strikethrough** text.

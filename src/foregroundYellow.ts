@@ -1,5 +1,5 @@
-import { FOREGROUND_YELLOW } from "./codes.js";
-import { foregroundColor } from "./foregroundColor.js";
+import { FOREGROUND_YELLOW } from "./codes";
+import { foregroundColor } from "./foregroundColor";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **yellow** foreground.

@@ -1,5 +1,5 @@
 import { deepEqual } from "node:assert/strict";
-import { ansi } from "../dist/require/ansi.js";
+import { ansi } from "../dist/require/ansi";
 
 export default deepEqual(
 	ansi(1),
