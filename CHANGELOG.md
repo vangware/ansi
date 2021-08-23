@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 
 ## 2.0.6
 
+-   :bug: fix but with light theme in docs.
+
+## 2.0.6
+
 -   :arrow_up: dependency upgrade.
 
 ## 2.0.5
