@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/ansi",
 	"description": "📟 Functional CLI ANSI formatter",
-	"version": "2.0.9",
+	"version": "2.0.10",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -11,12 +11,12 @@
 	"devDependencies": {
 		"@arkweid/lefthook": "^0.7.6",
 		"@types/eslint": "7.28.0",
-		"@types/node": "16.7.10",
+		"@types/node": "16.9.1",
 		"@types/prettier": "^2.3.2",
-		"@typescript-eslint/eslint-plugin": "4.30.0",
-		"@typescript-eslint/parser": "4.30.0",
-		"@vangware/base": "^5.2.4",
-		"c8": "^7.8.0",
+		"@typescript-eslint/eslint-plugin": "4.31.1",
+		"@typescript-eslint/parser": "4.31.1",
+		"@vangware/base": "^5.2.5",
+		"c8": "^7.9.0",
 		"eslint": "7.32.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-import-resolver-node": "^0.3.6",
@@ -27,11 +27,11 @@
 		"eslint-plugin-prefer-arrow": "^1.2.3",
 		"eslint-plugin-prettier": "^4.0.0",
 		"npm-run-all": "^4.1.5",
-		"prettier": "2.3.2",
+		"prettier": "2.4.0",
 		"rimraf": "^3.0.2",
 		"ts-node": "^10.2.1",
-		"typedoc": "^0.21.9",
-		"typescript": "4.4.2"
+		"typedoc": "^0.22.3",
+		"typescript": "4.4.3"
 	},
 	"exports": {
 		"import": "./dist/import/index.js",

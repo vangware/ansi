@@ -9,9 +9,9 @@ export const formattingEnabled = ({
 		FORCE_COLOR: forceColor = "1",
 		NODE_DISABLE_COLORS: nodeDisableColors = "",
 		NO_COLOR: noColor,
-		TERM: term
+		TERM: term,
 	} = {},
-	stdout: { isTTY } = { isTTY: false }
+	stdout: { isTTY } = { isTTY: false },
 }: {
 	readonly env?: typeof process.env;
 	readonly stdout?: Pick<typeof process.stdout, "isTTY">;
