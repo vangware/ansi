@@ -10,5 +10,5 @@ export default deepEqual(
 	mixed("foobar"),
 	second(first("foobar")),
 	`Given an string and a mix of 2 functions,
-	must return that string surrounded by the expected values`
+	must return that string surrounded by the expected values`,
 );

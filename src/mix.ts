@@ -9,5 +9,5 @@ export const mix =
 		formatters.reduce(
 			// eslint-disable-next-line max-params
 			(output, formatter) => formatter(output),
-			input
+			input,
 		);

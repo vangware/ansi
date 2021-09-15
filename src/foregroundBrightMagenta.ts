@@ -9,5 +9,5 @@ import { foregroundColor } from "./foregroundColor";
  * @returns `input` string with **bright magenta** foreground.
  */
 export const foregroundBrightMagenta = foregroundColor(
-	FOREGROUND_BRIGHT_MAGENTA
+	FOREGROUND_BRIGHT_MAGENTA,
 );
