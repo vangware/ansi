@@ -9,5 +9,5 @@ import { BACKGROUND_BRIGHT_MAGENTA } from "./codes";
  * @returns `input` string with **bright magenta** background.
  */
 export const backgroundBrightMagenta = backgroundColor(
-	BACKGROUND_BRIGHT_MAGENTA
+	BACKGROUND_BRIGHT_MAGENTA,
 );
