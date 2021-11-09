@@ -6,6 +6,11 @@ import { BACKGROUND_BRIGHT_MAGENTA } from "./codes";
  * background.
  *
  * @category Background
+ * @example
+ * ```typescript
+ * backgroundBrightMagenta("Foo"); // "\x1b[105mFoo\x1b[49m"
+ * backgroundBrightMagenta("Bar"); // "\x1b[105mBar\x1b[49m"
+ * ```
  * @returns `input` string with **bright magenta** background.
  */
 export const backgroundBrightMagenta = backgroundColor(
