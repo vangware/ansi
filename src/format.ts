@@ -5,6 +5,11 @@ import { ansi } from "./ansi";
  * `input` (surrounded by `open` and `close`).
  *
  * @category Common
+ * @example
+ * ```typescript
+ * format(13)(42)("Foo"); // "\x1b[42mFoo\x1b[13m"
+ * format(42)(13)("Bar"); // "\x1b[13mBar\x1b[42m"
+ * ```
  * @param close Close value.
  * @returns Curried function with `close` in context.
  */
