@@ -8,10 +8,10 @@ jobs:
             - name: Use Checkout 2
               uses: actions/checkout@v2
 
-            - name: Use Node.js 16
+            - name: Use Node.js 17
               uses: actions/setup-node@v1
               with:
-                  node-version: 16.x
+                  node-version: 17.x
 
             - name: Use pnpm 6
               uses: pnpm/action-setup@v2
@@ -20,7 +20,7 @@ jobs:
                   run_install: true
 
             - name: Compile
-              run: pnpx tsc --project tsconfig.require.json
+              run: pnpx tsc --project tsconfig.dist.json
 
             - name: Run tests
               run: pnpm test
