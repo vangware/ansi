@@ -2,13 +2,11 @@ pre-push:
     commands:
         clean:
             run: rimraf ./dist
-        compile-import:
-            run: tsc --project tsconfig.import.json
-        compile-require:
-            run: tsc --project tsconfig.require.json
+        compile:
+            run: tsc --project ./tsconfig.dist.json
         lint:
-            run: eslint {src,tests}/**/*.ts
+            run: eslint {src/**/*.ts,tests/**/*.js}
         test:
-            run: c8 ts-node ./tests
+            run: c8 node ./tests
         document:
             run: typedoc

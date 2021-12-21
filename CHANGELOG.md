@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.0.0
+
+-   :truck: move away from CJS to ESM only.
+
 ## 2.0.12
 
 -   :arrow_up: dependency upgrade.

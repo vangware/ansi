@@ -1,5 +1,4 @@
-import { FOREGROUND_BRIGHT_RED } from "./codes";
-import { foregroundColor } from "./foregroundColor";
+import { foregroundColor } from "./foregroundColor.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **bright red**
@@ -13,4 +12,4 @@ import { foregroundColor } from "./foregroundColor";
  * ```
  * @returns `input` string with **bright red** foreground.
  */
-export const foregroundBrightRed = foregroundColor(FOREGROUND_BRIGHT_RED);
+export const foregroundBrightRed = foregroundColor(91);
