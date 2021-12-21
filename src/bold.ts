@@ -1,5 +1,4 @@
-import { BOLD, REGULAR } from "./codes";
-import { optionalFormat } from "./optionalFormat";
+import { optionalFormat } from "./optionalFormat.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **bold** text.
@@ -12,4 +11,4 @@ import { optionalFormat } from "./optionalFormat";
  * ```
  * @returns `input` string with **bold** format.
  */
-export const bold = optionalFormat(REGULAR)(BOLD);
+export const bold = optionalFormat(22)(1);

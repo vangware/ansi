@@ -1,5 +1,4 @@
-import { INVERT, NOT_INVERT } from "./codes";
-import { optionalFormat } from "./optionalFormat";
+import { optionalFormat } from "./optionalFormat.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **inverse** text.
@@ -12,4 +11,4 @@ import { optionalFormat } from "./optionalFormat";
  * ```
  * @returns `input` string with **inverse** format.
  */
-export const inverse = optionalFormat(NOT_INVERT)(INVERT);
+export const inverse = optionalFormat(27)(7);

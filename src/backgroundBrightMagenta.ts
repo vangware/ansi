@@ -1,5 +1,4 @@
-import { backgroundColor } from "./backgroundColor";
-import { BACKGROUND_BRIGHT_MAGENTA } from "./codes";
+import { backgroundColor } from "./backgroundColor.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **bright magenta**
@@ -13,6 +12,4 @@ import { BACKGROUND_BRIGHT_MAGENTA } from "./codes";
  * ```
  * @returns `input` string with **bright magenta** background.
  */
-export const backgroundBrightMagenta = backgroundColor(
-	BACKGROUND_BRIGHT_MAGENTA,
-);
+export const backgroundBrightMagenta = backgroundColor(105);
