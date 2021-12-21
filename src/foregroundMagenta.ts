@@ -1,5 +1,4 @@
-import { FOREGROUND_MAGENTA } from "./codes";
-import { foregroundColor } from "./foregroundColor";
+import { foregroundColor } from "./foregroundColor.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **magenta** foreground.
@@ -12,4 +11,4 @@ import { foregroundColor } from "./foregroundColor";
  * ```
  * @returns `input` string with **magenta** foreground.
  */
-export const foregroundMagenta = foregroundColor(FOREGROUND_MAGENTA);
+export const foregroundMagenta = foregroundColor(35);

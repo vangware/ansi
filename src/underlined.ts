@@ -1,5 +1,4 @@
-import { NOT_UNDERLINE, UNDERLINE } from "./codes";
-import { optionalFormat } from "./optionalFormat";
+import { optionalFormat } from "./optionalFormat.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **underlined** text.
@@ -12,4 +11,4 @@ import { optionalFormat } from "./optionalFormat";
  * ```
  * @returns `input` string with **underlined** format.
  */
-export const underlined = optionalFormat(NOT_UNDERLINE)(UNDERLINE);
+export const underlined = optionalFormat(24)(4);

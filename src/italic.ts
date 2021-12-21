@@ -1,5 +1,4 @@
-import { ITALIC, NOT_ITALIC } from "./codes";
-import { optionalFormat } from "./optionalFormat";
+import { optionalFormat } from "./optionalFormat.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **italic** text.
@@ -12,4 +11,4 @@ import { optionalFormat } from "./optionalFormat";
  * ```
  * @returns `input` string with **italic** format.
  */
-export const italic = optionalFormat(NOT_ITALIC)(ITALIC);
+export const italic = optionalFormat(23)(3);
