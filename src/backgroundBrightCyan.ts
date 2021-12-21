@@ -1,5 +1,4 @@
-import { backgroundColor } from "./backgroundColor";
-import { BACKGROUND_BRIGHT_CYAN } from "./codes";
+import { backgroundColor } from "./backgroundColor.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **bright cyan**
@@ -13,4 +12,4 @@ import { BACKGROUND_BRIGHT_CYAN } from "./codes";
  * ```
  * @returns `input` string with **bright cyan** background.
  */
-export const backgroundBrightCyan = backgroundColor(BACKGROUND_BRIGHT_CYAN);
+export const backgroundBrightCyan = backgroundColor(106);

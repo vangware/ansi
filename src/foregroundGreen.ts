@@ -1,5 +1,4 @@
-import { FOREGROUND_GREEN } from "./codes";
-import { foregroundColor } from "./foregroundColor";
+import { foregroundColor } from "./foregroundColor.js";
 
 /**
  * Takes an `input` string and adds the ANSI codes for **green** foreground.
@@ -12,4 +11,4 @@ import { foregroundColor } from "./foregroundColor";
  * ```
  * @returns `input` string with **green** foreground.
  */
-export const foregroundGreen = foregroundColor(FOREGROUND_GREEN);
+export const foregroundGreen = foregroundColor(32);

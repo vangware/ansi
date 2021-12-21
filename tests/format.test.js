@@ -1,5 +1,5 @@
 import { deepEqual } from "node:assert/strict";
-import { format } from "../dist/require/format";
+import { format } from "../dist/format.js";
 
 export default deepEqual(
 	format(2)(1)("foobar"),
