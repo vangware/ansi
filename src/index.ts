@@ -40,6 +40,7 @@ export { formattingEnabled } from "./formattingEnabled.js";
 export { inverse } from "./inverse.js";
 export { italic } from "./italic.js";
 export { mix } from "./mix.js";
+export { normalizeString } from "./normalizeString.js";
 export { optionalFormat } from "./optionalFormat.js";
 export { strikethrough } from "./strikethrough.js";
 export { underlined } from "./underlined.js";
