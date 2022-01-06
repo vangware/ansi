@@ -12,9 +12,17 @@
  * @param formatters Array of formatters to be composed.
  */
 export const mix =
-	(formatters: ReadonlyArray<(input: string) => string>) => (input: string) =>
+	(
+		formatters: ReadonlyArray<
+			(
+				input: TemplateStringsArray | string,
+				...values: ReadonlyArray<unknown>
+			) => string
+		>,
+	) =>
+	(input: TemplateStringsArray | string, ...values: ReadonlyArray<unknown>) =>
 		formatters.reduce(
 			// eslint-disable-next-line max-params
-			(output, formatter) => formatter(output),
+			(output, formatter) => formatter(output, ...values),
 			input,
 		);

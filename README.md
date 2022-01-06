@@ -19,7 +19,7 @@ This package can be installed as a dependency or used directly.
 ```js
 import { foregroundRed } from "https://cdn.skypack.dev/@vangware/ansi";
 
-foregroundRed("Hello world!");
+foregroundRed`Hello world!`;
 ```
 
 🌎 Or in the browser:
@@ -28,7 +28,7 @@ foregroundRed("Hello world!");
 <script type="module">
 	import { foregroundRed } from "https://cdn.skypack.dev/@vangware/ansi";
 
-	foregroundRed("Hello world!");
+	foregroundRed`Hello world!`;
 </script>
 ```
 
@@ -46,12 +46,12 @@ And then:
 import { whiteText, redBackground, bold, mix } from "@vangware/ansi";
 
 // You can just use the styles
-console.log(redBackground("Red background text"));
+console.log(redBackground`Red background text`);
 
 // Or you can mix them!
 const warningText = mix([whiteText, redBackground, bold]);
 
-console.log(warningText("Warning!"));
+console.log(warningText`Warning!`);
 ```
 
 ## Documentation
