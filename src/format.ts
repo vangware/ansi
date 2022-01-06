@@ -1,4 +1,5 @@
 import { ansi } from "./ansi.js";
+import { normalizeString } from "./normalizeString.js";
 
 /**
  * Given an `open`, a `close` value and an `input` string, return formatted
@@ -31,10 +32,6 @@ export const format =
 		input: Input | TemplateStringsArray,
 		...values: ReadonlyArray<unknown>
 	) =>
-		`${ansi(open)}${
-			typeof input === "string"
-				? input
-				: input
-						.flatMap((string, index) => [string, values[index]])
-						.join("")
-		}${ansi(close)}` as const;
+		`${ansi(open)}${normalizeString(input, ...values)}${ansi(
+			close,
+		)}` as const;
