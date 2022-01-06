@@ -9,6 +9,9 @@ import { ansi } from "./ansi.js";
  * ```typescript
  * format(13)(42)("Foo"); // "\x1b[42mFoo\x1b[13m"
  * format(42)(13)("Bar"); // "\x1b[13mBar\x1b[42m"
+ * // It can also be used as template tagged function:
+ * format(13)(42)`Foo`; // "\x1b[42mFoo\x1b[13m"
+ * format(42)(13)`Bar`; // "\x1b[13mBar\x1b[42m"
  * ```
  * @param close Close value.
  * @returns Curried function with `close` in context.
@@ -24,5 +27,14 @@ export const format =
 	 * @param input Input string to be wrapped by `open` and `close`.
 	 * @returns Formatted `input`.
 	 */
-	<Input extends string>(input: Input) =>
-		`${ansi(open)}${input}${ansi(close)}` as const;
+	<Input extends string>(
+		input: Input | TemplateStringsArray,
+		...values: ReadonlyArray<unknown>
+	) =>
+		`${ansi(open)}${
+			typeof input === "string"
+				? input
+				: input
+						.flatMap((string, index) => [string, values[index]])
+						.join("")
+		}${ansi(close)}` as const;
