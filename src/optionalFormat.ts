@@ -12,5 +12,12 @@ export const optionalFormat = formattingEnabled(process)
 	? format
 	: (_close: number) =>
 			(_open: number) =>
-			<Input extends string>(input: Input) =>
-				input;
+			<Input extends string>(
+				input: Input | TemplateStringsArray,
+				...values: ReadonlyArray<unknown>
+			) =>
+				typeof input === "string"
+					? input
+					: input
+							.flatMap((string, index) => [string, values[index]])
+							.join("");
