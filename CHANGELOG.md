@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.1.3
+
+-   :sparkles: add new `Formatter` type.
+-   :heavy_plus_sign: add `@vangware/types` dependency.
+
 ## 3.1.2
 
 -   :sparkles: add new `normalizeString` function to export that functionality.
