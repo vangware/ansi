@@ -1,4 +1,5 @@
 import { ansi } from "./ansi.js";
+import type { Formatter } from "./Formatter.js";
 import { normalizeString } from "./normalizeString.js";
 
 /**
@@ -23,15 +24,11 @@ export const format =
 	 * @param open Open value.
 	 * @returns Curried function with `open` and `close` in context.
 	 */
-	<Open extends number>(open: Open) =>
+	<Open extends number>(open: Open): Formatter =>
 	/**
 	 * @param input Input string to be wrapped by `open` and `close`.
+	 * @param values Possible values passed to the template string.
 	 * @returns Formatted `input`.
 	 */
-	<Input extends string>(
-		input: Input | TemplateStringsArray,
-		...values: ReadonlyArray<unknown>
-	) =>
-		`${ansi(open)}${normalizeString(input, ...values)}${ansi(
-			close,
-		)}` as const;
+	(input, ...values) =>
+		`${ansi(open)}${normalizeString(input, ...values)}${ansi(close)}`;
