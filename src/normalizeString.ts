@@ -1,3 +1,5 @@
+import type { Formatter } from "./Formatter.js";
+
 /**
  * Takes a string or a template string and returns a plain string.
  *
@@ -7,14 +9,11 @@
  * normalizeString`Hello ${13}!`; // "Hello 13!"
  * normalizeString(`Hello ${13}!`); // "Hello 13!"
  * ```
- * @param input String or Template String.
+ * @param input String or template string.
  * @param values Possible values passed to the template string.
  * @returns Plain string.
  */
-export const normalizeString = <Input extends string>(
-	input: Input | TemplateStringsArray,
-	...values: ReadonlyArray<unknown>
-) =>
+export const normalizeString: Formatter = (input, ...values) =>
 	typeof input === "string"
 		? input
 		: input

@@ -1,3 +1,6 @@
+import type { ReadOnlyArray } from "@vangware/types";
+import type { Formatter } from "./Formatter.js";
+
 /**
  * Composes formatters.
  *
@@ -12,17 +15,13 @@
  * @param formatters Array of formatters to be composed.
  */
 export const mix =
-	(
-		formatters: ReadonlyArray<
-			(
-				input: TemplateStringsArray | string,
-				...values: ReadonlyArray<unknown>
-			) => string
-		>,
-	) =>
-	(input: TemplateStringsArray | string, ...values: ReadonlyArray<unknown>) =>
+	(formatters: ReadOnlyArray<Formatter>): Formatter =>
+	/**
+	 * @param input String or template string.
+	 * @param values Possible values passed to the template string.
+	 */
+	(input, ...values) =>
 		formatters.reduce(
-			// eslint-disable-next-line max-params
 			(output, formatter) => formatter(output, ...values),
-			input,
+			input as string,
 		);
