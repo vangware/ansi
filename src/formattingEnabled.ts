@@ -2,7 +2,12 @@
  * Given a NodeJS `process`, return `true` if colors are enabled.
  *
  * @category Common
+ * @example
+ * ```typescript
+ * formattingEnabled(process); // true if colors enabled, false otherwise
+ * ```
  * @param process NodeJS `process`.
+ * @returns `true` if colors are enabled.
  */
 export const formattingEnabled = ({
 	env: {

@@ -6,8 +6,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Text
  * @example
  * ```typescript
- * strikethrough("Foo"); // "\x1b[9mFoo\x1b[29m"
- * strikethrough("Bar"); // "\x1b[9mBar\x1b[29m"
+ * strikethrough("Vangware"); // "\x1b[9mVangware\x1b[29m"
+ * // It can also be used as a tag function for tagged templates:
+ * strikethrough`Vangware`; // "\x1b[9mVangware\x1b[29m"
  * ```
  * @returns `input` string with **strikethrough** format.
  */

@@ -7,8 +7,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Background
  * @example
  * ```typescript
- * backgroundColor(13)("Foo"); // "\x1b[13mFoo\x1b[49m"
- * backgroundColor(42)("Bar"); // "\x1b[42mBar\x1b[49m"
+ * backgroundColor(13)("Vangware"); // "\x1b[13mVangware\x1b[49m"
+ * // It can also be used as a tag function for tagged templates:
+ * backgroundColor(13)`Vangware`; // "\x1b[13mVangware\x1b[49m"
  * ```
  * @returns Curried function with `close` ANSI code for background in context.
  */
