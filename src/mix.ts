@@ -9,10 +9,12 @@ import type { Formatter } from "./Formatter.js";
  * ```ts
  * const redTextWhiteBackground = mix([foregroundRed, backgroundWhite]);
  *
- * redTextWhiteBackground("Foo"); // "\x1b[47m\x1b[31mFoo\x1b[39m\x1b[49m"
- * redTextWhiteBackground("Bar"); // "\x1b[47m\x1b[31mBar\x1b[39m\x1b[49m"
+ * redTextWhiteBackground("Vangware");
+ * // It can also be used as a tag function for tagged templates:
+ * redTextWhiteBackground`Vangware`;
  * ```
  * @param formatters Array of formatters to be composed.
+ * @returns Formatter composed of the given formatters.
  */
 export const mix =
 	(formatters: ReadOnlyArray<Formatter>): Formatter =>
