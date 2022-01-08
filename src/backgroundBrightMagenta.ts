@@ -7,8 +7,9 @@ import { backgroundColor } from "./backgroundColor.js";
  * @category Background
  * @example
  * ```typescript
- * backgroundBrightMagenta("Foo"); // "\x1b[105mFoo\x1b[49m"
- * backgroundBrightMagenta("Bar"); // "\x1b[105mBar\x1b[49m"
+ * backgroundBrightMagenta("Vangware"); // "\x1b[105mVangware\x1b[49m"
+ * // It can also be used as a tag function for tagged templates:
+ * backgroundBrightMagenta`Vangware`; // "\x1b[105mVangware\x1b[49m"
  * ```
  * @returns `input` string with **bright magenta** background.
  */

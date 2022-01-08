@@ -6,8 +6,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Text
  * @example
  * ```typescript
- * italic("Foo"); // "\x1b[3mFoo\x1b[23m"
- * italic("Bar"); // "\x1b[3mBar\x1b[23m"
+ * italic("Vangware"); // "\x1b[3mVangware\x1b[23m"
+ * // It can also be used as a tag function for tagged templates:
+ * italic`Vangware`; // "\x1b[3mVangware\x1b[23m"
  * ```
  * @returns `input` string with **italic** format.
  */

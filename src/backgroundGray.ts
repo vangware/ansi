@@ -6,8 +6,9 @@ import { backgroundColor } from "./backgroundColor.js";
  * @category Background
  * @example
  * ```typescript
- * backgroundGray("Foo"); // "\x1b[100mFoo\x1b[49m"
- * backgroundGray("Bar"); // "\x1b[100mBar\x1b[49m"
+ * backgroundGray("Vangware"); // "\x1b[100mVangware\x1b[49m"
+ * // It can also be used as a tag function for tagged templates:
+ * backgroundGray`Vangware`; // "\x1b[100mVangware\x1b[49m"
  * ```
  * @returns `input` string with **gray** background.
  */

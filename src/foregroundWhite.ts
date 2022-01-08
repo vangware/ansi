@@ -6,8 +6,9 @@ import { foregroundColor } from "./foregroundColor.js";
  * @category Foreground
  * @example
  * ```typescript
- * foregroundWhite("Foo"); // "\x1b[37mFoo\x1b[39m"
- * foregroundWhite("Bar"); // "\x1b[37mBar\x1b[39m"
+ * foregroundWhite("Vangware"); // "\x1b[37mVangware\x1b[39m"
+ * // It can also be used as a tag function for tagged templates:
+ * foregroundWhite`Vangware`; // "\x1b[37mVangware\x1b[39m"
  * ```
  * @returns `input` string with **white** foreground.
  */

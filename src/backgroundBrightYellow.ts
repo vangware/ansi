@@ -7,8 +7,9 @@ import { backgroundColor } from "./backgroundColor.js";
  * @category Background
  * @example
  * ```typescript
- * backgroundBrightYellow("Foo"); // "\x1b[103mFoo\x1b[49m"
- * backgroundBrightYellow("Bar"); // "\x1b[103mBar\x1b[49m"
+ * backgroundBrightYellow("Vangware"); // "\x1b[103mVangware\x1b[49m"
+ * // It can also be used as a tag function for tagged templates:
+ * backgroundBrightYellow`Vangware`; // "\x1b[103mVangware\x1b[49m"
  * ```
  * @returns `input` string with **bright yellow** background.
  */

@@ -7,8 +7,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Foreground
  * @example
  * ```typescript
- * foregroundColor(13)("Foo"); // "\x1b[13mFoo\x1b[39m"
- * foregroundColor(42)("Bar"); // "\x1b[42mBar\x1b[39m"
+ * foregroundColor(13)("Vangware"); // "\x1b[13mVangware\x1b[39m"
+ * // It can also be used as a tag function for tagged templates:
+ * foregroundColor(13)`Vangware`; // "\x1b[13mVangware\x1b[39m"
  * ```
  * @returns Curried function with `close` ANSI code for text color in context.
  */

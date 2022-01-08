@@ -6,8 +6,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Text
  * @example
  * ```typescript
- * dimmed("Foo"); // "\x1b[2mFoo\x1b[22m"
- * dimmed("Bar"); // "\x1b[2mBar\x1b[22m"
+ * dimmed("Vangware"); // "\x1b[2mVangware\x1b[22m"
+ * // It can also be used as a tag function for tagged templates:
+ * dimmed`Vangware`; // "\x1b[2mVangware\x1b[22m"
  * ```
  * @returns `input` string with **dimmed** format.
  */

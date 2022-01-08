@@ -6,8 +6,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Text
  * @example
  * ```typescript
- * underlined("Foo"); // "\x1b[4mFoo\x1b[24m"
- * underlined("Bar"); // "\x1b[4mBar\x1b[24m"
+ * underlined("Vangware"); // "\x1b[4mVangware\x1b[24m"
+ * // It can also be used as a tag function for tagged templates:
+ * underlined`Vangware`; // "\x1b[4mVangware\x1b[24m"
  * ```
  * @returns `input` string with **underlined** format.
  */
