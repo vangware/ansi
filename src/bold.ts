@@ -6,8 +6,9 @@ import { optionalFormat } from "./optionalFormat.js";
  * @category Text
  * @example
  * ```typescript
- * bold("Foo"); // "\x1b[1mFoo\x1b[22m"
- * bold("Bar"); // "\x1b[1mBar\x1b[22m"
+ * bold("Vangware"); // "\x1b[1mVangware\x1b[22m"
+ * // It can also be used as a tag function for tagged templates:
+ * bold`Vangware`; // "\x1b[1mVangware\x1b[22m"
  * ```
  * @returns `input` string with **bold** format.
  */
