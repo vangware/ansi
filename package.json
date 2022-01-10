@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/ansi",
 	"description": "📟 Functional CLI ANSI formatter",
-	"version": "3.1.4",
+	"version": "3.1.5",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
@@ -9,23 +9,23 @@
 	},
 	"bugs": "https://github.com/vangware/ansi/issues",
 	"dependencies": {
-		"@vangware/types": "^2.0.6",
-		"eslint-plugin-jsdoc": "^37.5.1"
+		"@vangware/types": "^2.1.0",
+		"eslint-plugin-jsdoc": "^37.6.1"
 	},
 	"devDependencies": {
 		"@arkweid/lefthook": "^0.7.7",
 		"@types/eslint": "^8.2.2",
 		"@types/node": "^17.0.8",
 		"@types/prettier": "^2.4.2",
-		"@typescript-eslint/eslint-plugin": "^5.9.0",
-		"@typescript-eslint/parser": "^5.9.0",
-		"@vangware/configs": "^1.1.0",
+		"@typescript-eslint/eslint-plugin": "^5.9.1",
+		"@typescript-eslint/parser": "^5.9.1",
+		"@vangware/configs": "^1.1.1",
 		"c8": "^7.11.0",
 		"eslint": "^8.6.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-import-resolver-node": "^0.3.6",
 		"eslint-plugin-ban": "^1.6.0",
-		"eslint-plugin-functional": "^4.0.2",
+		"eslint-plugin-functional": "^4.1.1",
 		"eslint-plugin-import": "^2.25.4",
 		"eslint-plugin-no-null": "^1.0.2",
 		"eslint-plugin-prefer-arrow": "^1.2.3",
