@@ -1,8 +1,11 @@
-import { deepEqual } from "node:assert/strict";
 import { ansi } from "../dist/ansi.js";
 
-export default deepEqual(
-	ansi(1),
-	"\x1b[1m",
-	"Given a number 1, must return that number with the ANSI scape sequence",
-);
+/** @type {import(".").Tests<string>} */
+export default [
+	{
+		given: "a number 13",
+		must: "return that number with the ANSI scape sequence",
+		received: ansi(13),
+		wanted: "\x1b[13m",
+	},
+];

@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.1.11
+
+-   :arrow_up: dependency upgrade.
+-   :white_check_mark: update test to use a cheap `@vangware/test` approach.
+-   :white_check_mark: add tests for `normalizeString`.
+
 ## 3.1.10
 
 -   :arrow_up: dependency upgrade.
