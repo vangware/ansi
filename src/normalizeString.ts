@@ -14,8 +14,8 @@ import type { Formatter } from "./Formatter.js";
  * @returns Plain string.
  */
 export const normalizeString: Formatter = (input, ...values) =>
-	typeof input === "string"
-		? input
-		: input
+	Array.isArray(input)
+		? (input as Readonly<TemplateStringsArray>)
 				.flatMap((string, index) => [string, values[index] ?? ""])
-				.join("");
+				.join("")
+		: `${input as string}`;
