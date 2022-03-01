@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.1.15
+
+-   :arrow_up: dependency upgrade.
+-   :heavy_minus_sign: remove unneeded dependencies.
+
 ## 3.1.14
 
 -   :arrow_up: dependency upgrade.
