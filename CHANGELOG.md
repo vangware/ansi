@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.1.21
+
+-   :arrow_up: dependency upgrade.
+
 ## 3.1.20
 
 -   :arrow_up: dependency upgrade.
@@ -37,7 +41,8 @@ All notable changes to this project will be documented in this file.
 ## 3.1.13
 
 -   :arrow_up: dependency upgrade.
--   :building_construction: `normalizeString` now has better logic to handle non strings.
+-   :building_construction: `normalizeString` now has better logic to handle non
+    strings.
 
 ## 3.1.12
 
@@ -344,11 +349,13 @@ All notable changes to this project will be documented in this file.
 
 ## 1.1.0
 
--   :building_construction: change formats to be ignored when env ask for no colors.
+-   :building_construction: change formats to be ignored when env ask for no
+    colors.
 
 ## 1.0.1
 
--   :pencil2: fix wrong time for `underlined` (is not a patch, but nobody uses this yet).
+-   :pencil2: fix wrong time for `underlined` (is not a patch, but nobody uses
+    this yet).
 
 ## 1.0.0
 
