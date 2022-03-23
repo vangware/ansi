@@ -1,9 +1,7 @@
 <img alt="Vangware's ANSI logo" src="./logo.svg" height="192" />
 
-![Build Status][build-status-badge]
-![Coverage][coverage-badge]
-![License][license-badge]
-![NPM Version][npm-version-badge]
+![Build Status][build-status-badge] ![Coverage][coverage-badge]
+![License][license-badge] ![NPM Version][npm-version-badge]
 ![Open Issues][open-issues-badge]
 
 📟 Functional CLI ANSI formatter.
@@ -17,7 +15,7 @@ This package can be installed as a dependency or used directly.
 🦕 In JS or [deno][deno]:
 
 ```js
-import { foregroundRed } from "https://cdn.skypack.dev/@vangware/ansi";
+import { foregroundRed } from "https://esm.sh/@vangware/ansi";
 
 foregroundRed`Hello world!`;
 ```
@@ -26,7 +24,7 @@ foregroundRed`Hello world!`;
 
 ```html
 <script type="module">
-	import { foregroundRed } from "https://cdn.skypack.dev/@vangware/ansi";
+	import { foregroundRed } from "https://esm.sh/@vangware/ansi";
 
 	foregroundRed`Hello world!`;
 </script>
@@ -56,7 +54,10 @@ console.log(warningText`Warning!`);
 
 ## Documentation
 
-Documentation can be found [HERE][documentation]. It is auto-generated with [typedoc][typedoc] based on the JSDocs and the types in the source. Shouldn't be necessary to read this, code editors like [VSCode][vscode] integrate the documentation in the UI.
+Documentation can be found [HERE][documentation]. It is auto-generated with
+[typedoc][typedoc] based on the JSDocs and the types in the source. Shouldn't be
+necessary to read this, code editors like [VSCode][vscode] integrate the
+documentation in the UI.
 
 ## Changelog
 
@@ -68,14 +69,19 @@ Test coverage can be found [HERE][coverage].
 
 <!-- Reference -->
 
-[build-status-badge]: https://img.shields.io/github/workflow/status/vangware/ansi/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/actions
+[build-status-badge]:
+	https://img.shields.io/github/workflow/status/vangware/ansi/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/actions
 [changelog]: https://github.com/vangware/ansi/blob/main/CHANGELOG.md
-[coverage-badge]: https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/ansi
+[coverage-badge]:
+	https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/ansi
 [coverage]: https://coveralls.io/github/vangware/ansi
 [deno]: https://deno.land/
 [documentation]: https://ansi.vangware.com
-[license-badge]: https://img.shields.io/npm/l/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/blob/main/LICENSE
-[npm-version-badge]: https://img.shields.io/npm/v/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/ansi
-[open-issues-badge]: https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/issues
+[license-badge]:
+	https://img.shields.io/npm/l/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/blob/main/LICENSE
+[npm-version-badge]:
+	https://img.shields.io/npm/v/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/ansi
+[open-issues-badge]:
+	https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/issues
 [typedoc]: https://typedoc.org/
 [vscode]: https://code.visualstudio.com/
