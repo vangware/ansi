@@ -19,8 +19,17 @@ import type { Formatter } from "./Formatter.js";
 export const mix =
 	(formatters: ReadOnlyArray<Formatter>): Formatter =>
 	/**
+	 * Function with formatters set in context.
+	 *
+	 * @example
+	 * ```ts
+	 * redTextWhiteBackground("Vangware");
+	 * // It can also be used as a tag function for tagged templates:
+	 * redTextWhiteBackground`Vangware`;
+	 * ```
 	 * @param input String or template string.
 	 * @param values Possible values passed to the template string.
+	 * @returns Formatted string.
 	 */
 	(input, ...values) =>
 		formatters.reduce(
