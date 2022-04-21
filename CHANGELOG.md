@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.1.25
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: better eslint script config.
+
 ## 3.1.24
 
 -   :arrow_up: dependency upgrade.
