@@ -5,7 +5,7 @@ const first = format(13)(13);
 const second = format(42)(42);
 const mixed = mix([first, second]);
 
-/** @type {import(".").Tests<string>} */
+/** @type {import("./index.js").Tests<string>} */
 export default [
 	{
 		given: "an string and a mix of 2 functions",

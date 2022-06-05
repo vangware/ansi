@@ -1,6 +1,6 @@
 import { ansi } from "../dist/ansi.js";
 
-/** @type {import(".").Tests<string>} */
+/** @type {import("./index.js").Tests<string>} */
 export default [
 	{
 		given: "a number 13",

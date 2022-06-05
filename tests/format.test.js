@@ -1,6 +1,6 @@
 import { format } from "../dist/format.js";
 
-/** @type {import(".").Tests<string>} */
+/** @type {import("./index.js").Tests<string>} */
 export default [
 	{
 		given: "a number 1, a number 2 and a string",
