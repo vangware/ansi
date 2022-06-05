@@ -1,6 +1,6 @@
 import { normalizeString } from "../dist/normalizeString.js";
 
-/** @type {import(".").Tests<string>} */
+/** @type {import("./index.js").Tests<string>} */
 export default [
 	{
 		given: "a plain string",

@@ -1,6 +1,6 @@
 import { formattingEnabled } from "../dist/formattingEnabled.js";
 
-/** @type {import(".").Tests<boolean>} */
+/** @type {import("./index.js").Tests<boolean>} */
 export default [
 	{
 		given: "a process mock with no env or stdout",
