@@ -9,7 +9,7 @@
 	},
 	"bugs": "https://github.com/vangware/ansi/issues",
 	"dependencies": {
-		"@vangware/types": "^2.6.0"
+		"@vangware/types": "^3.0.0"
 	},
 	"devDependencies": {
 		"@evilmartians/lefthook": "^1.0.5",
