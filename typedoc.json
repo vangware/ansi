@@ -3,5 +3,5 @@
 	"cname": "ansi.vangware.com",
 	"entryPoints": ["./src"],
 	"extends": ["./node_modules/@vangware/configs/typedoc.json"],
-	"name": "@vangware/types"
+	"name": "@vangware/ansi"
 }
