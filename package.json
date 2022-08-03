@@ -1,7 +1,7 @@
 {
 	"name": "@vangware/ansi",
 	"description": "📟 Functional CLI ANSI formatter",
-	"version": "3.1.41",
+	"version": "3.1.42",
 	"author": {
 		"email": "hello@vangware.com",
 		"name": "Vangware",
