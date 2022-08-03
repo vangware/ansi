@@ -1,4 +1,4 @@
-<img alt="Vangware's ANSI logo" src="./logo.svg" height="192" />
+<img alt="Vangware's ANSI logo" src="./logo.svg" height="128" />
 
 ![Build Status][build-status-badge] ![Coverage][coverage-badge]
 ![License][license-badge] ![NPM Version][npm-version-badge]
@@ -70,18 +70,18 @@ Test coverage can be found [HERE][coverage].
 <!-- Reference -->
 
 [build-status-badge]:
-	https://img.shields.io/github/workflow/status/vangware/ansi/Test.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/actions
+	https://img.shields.io/github/workflow/status/vangware/ansi/Test.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/ansi/actions
 [changelog]: https://github.com/vangware/ansi/blob/main/CHANGELOG.md
 [coverage-badge]:
-	https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://coveralls.io/github/vangware/ansi
+	https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://coveralls.io/github/vangware/ansi
 [coverage]: https://coveralls.io/github/vangware/ansi
 [deno]: https://deno.land/
 [documentation]: https://ansi.vangware.com
 [license-badge]:
-	https://img.shields.io/npm/l/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/blob/main/LICENSE
+	https://img.shields.io/npm/l/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/ansi/blob/main/LICENSE
 [npm-version-badge]:
-	https://img.shields.io/npm/v/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://npm.im/@vangware/ansi
+	https://img.shields.io/npm/v/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/ansi
 [open-issues-badge]:
-	https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=2b7&link=https://github.com/vangware/ansi/issues
+	https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/ansi/issues
 [typedoc]: https://typedoc.org/
 [vscode]: https://code.visualstudio.com/

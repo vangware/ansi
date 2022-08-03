@@ -1,4 +1,4 @@
-import type { Formatter } from "./Formatter.js";
+import type { ReadOnlyArray } from "@vangware/types";
 
 /**
  * Takes a string or a template string and returns a plain string.
@@ -10,12 +10,15 @@ import type { Formatter } from "./Formatter.js";
  * normalizeString`Hello ${13}!`; // "Hello 13!"
  * ```
  * @param input String or template string.
- * @param values Possible values passed to the template string.
+ * @param expressions Possible values passed to the template string.
  * @returns Plain string.
  */
-export const normalizeString: Formatter = (input, ...values) =>
+export const normalizeString = (
+	input: Readonly<TemplateStringsArray> | string,
+	...expressions: ReadOnlyArray
+) =>
 	Array.isArray(input)
 		? (input as Readonly<TemplateStringsArray>)
-				.flatMap((string, index) => [string, values[index] ?? ""])
+				.flatMap((string, index) => [string, expressions[index] ?? ""])
 				.join("")
 		: `${input as string}`;
