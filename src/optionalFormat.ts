@@ -19,6 +19,7 @@ import { normalizeString } from "./normalizeString.js";
  * @param process NodeJS `process`.
  * @returns Either the formatted string, or just the passed string.
  */
-export const optionalFormat = formattingEnabled(process)
+export const optionalFormat = (formattingEnabled(process)
 	? format
-	: (_close: number) => (_open: number) => normalizeString;
+	: (_close: number) => (_open: number) =>
+			normalizeString) as unknown as typeof format;

@@ -17,7 +17,7 @@ import type { Formatter } from "./Formatter.js";
  * @returns Formatter composed of the given formatters.
  */
 export const mix =
-	(formatters: ReadOnlyArray<Formatter>): Formatter =>
+	(formatters: ReadOnlyArray<Formatter>) =>
 	/**
 	 * Function with formatters set in context.
 	 *
@@ -28,11 +28,14 @@ export const mix =
 	 * redTextWhiteBackground`Vangware`;
 	 * ```
 	 * @param input String or template string.
-	 * @param values Possible values passed to the template string.
+	 * @param expressions Possible values passed to the template string.
 	 * @returns Formatted string.
 	 */
-	(input, ...values) =>
+	(
+		input: Readonly<TemplateStringsArray> | string,
+		...expressions: ReadOnlyArray
+	) =>
 		formatters.reduce(
-			(output, formatter) => formatter(output, ...values),
+			(output, formatter) => formatter(output, ...expressions),
 			input as string,
 		);
