@@ -4,7 +4,7 @@ import { normalizeString } from "./normalizeString.js";
 
 /**
  * Impure version of `format` which changes depending on the current NodeJS
- * `process` environment.
+ * `globalThis.process` environment.
  *
  * @category Common
  * @example
@@ -16,10 +16,10 @@ import { normalizeString } from "./normalizeString.js";
  * // It also works with tagged templates:
  * optionalFormat(42)(13)`Vangware`; // "\x1b[42mVangware\x1b[13m"
  * ```
- * @param process NodeJS `process`.
+ * @param process NodeJS `globalThis.process`.
  * @returns Either the formatted string, or just the passed string.
  */
-export const optionalFormat = (formattingEnabled(process)
+export const optionalFormat = (formattingEnabled(globalThis.process)
 	? format
 	: (_close: number) => (_open: number) =>
 			normalizeString) as unknown as typeof format;
