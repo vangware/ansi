@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 3.2.0
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: `formattingEnabled` now uses `globalThis.process`
+    instead of just `process`.
+
 ## 3.1.43
 
 -   :arrow_up: dependency upgrade.

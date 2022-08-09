@@ -4,9 +4,9 @@
  * @category Common
  * @example
  * ```typescript
- * formattingEnabled(process); // true if colors enabled, false otherwise
+ * formattingEnabled(globalThis.process); // false if colors were disabled in the process, true otherwise.
  * ```
- * @param process NodeJS `process`.
+ * @param process NodeJS `globalThis.process`.
  * @returns `true` if colors are enabled.
  */
 export const formattingEnabled = ({
@@ -18,8 +18,8 @@ export const formattingEnabled = ({
 	} = {},
 	stdout: { isTTY } = { isTTY: false },
 }: {
-	readonly env?: typeof process.env;
-	readonly stdout?: Pick<typeof process.stdout, "isTTY">;
+	readonly env?: typeof globalThis.process.env;
+	readonly stdout?: Pick<typeof globalThis.process.stdout, "isTTY">;
 } = {}) =>
 	nodeDisableColors === "" &&
 	noColor === undefined &&
