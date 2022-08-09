@@ -19,7 +19,7 @@
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Given a NodeJS <code>process</code>, return <code>true</code> if colors are enabled.</p>
 
-<h3>Example</h3><pre><code class="language-typescript"><span class="hl-4">formattingEnabled</span><span class="hl-1">(</span><span class="hl-2">process</span><span class="hl-1">); </span><span class="hl-10">// true if colors enabled, false otherwise</span>
+<h3>Example</h3><pre><code class="language-typescript"><span class="hl-4">formattingEnabled</span><span class="hl-1">(</span><span class="hl-2">globalThis</span><span class="hl-1">.</span><span class="hl-2">process</span><span class="hl-1">); </span><span class="hl-10">// false if colors were disabled in the process, true otherwise.</span>
 </code></pre>
 
 <h3>Returns</h3><p><code>true</code> if colors are enabled.</p>
@@ -29,7 +29,7 @@
 <ul class="tsd-parameter-list">
 <li>
 <h5>process: <span class="tsd-signature-symbol">{ </span>env<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ProcessEnv</span><span class="tsd-signature-symbol">; </span>stdout<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WriteStream</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>fd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;isTTY&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
-<div class="tsd-comment tsd-typography"><p>NodeJS <code>process</code>.</p>
+<div class="tsd-comment tsd-typography"><p>NodeJS <code>globalThis.process</code>.</p>
 </div>
 <ul class="tsd-parameters">
 <li class="tsd-parameter">
