@@ -37,7 +37,6 @@ export { foregroundWhite } from "./foregroundWhite.js";
 export { foregroundYellow } from "./foregroundYellow.js";
 export { format } from "./format.js";
 export type { Formatter } from "./Formatter.js";
-export { formattingEnabled } from "./formattingEnabled.js";
 export { inverse } from "./inverse.js";
 export { italic } from "./italic.js";
 export { mix } from "./mix.js";

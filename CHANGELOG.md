@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.0.0
+
+-   :fire: remove `formattingEnabled` function. The check is done statically in
+    the `optionalFormat` function.
+-   :arrow_up: dependency upgrade.
+
 ## 3.2.4
 
 -   :arrow_up: dependency upgrade.
