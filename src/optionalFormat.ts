@@ -1,5 +1,5 @@
+import { env, stdout } from "node:process";
 import { format } from "./format.js";
-import { formattingEnabled } from "./formattingEnabled.js";
 import { normalizeString } from "./normalizeString.js";
 
 /**
@@ -19,7 +19,9 @@ import { normalizeString } from "./normalizeString.js";
  * @param process NodeJS `globalThis.process`.
  * @returns Either the formatted string, or just the passed string.
  */
-export const optionalFormat = (formattingEnabled(globalThis.process)
+export const optionalFormat = ((env.NODE_DISABLE_COLORS ?? "") === "" &&
+env.NO_COLOR === undefined &&
+env.TERM !== "dumb" &&
+((env.FORCE_COLOR ?? "1") !== "0" || stdout.isTTY)
 	? format
-	: (_close: number) => (_open: number) =>
-			normalizeString) as unknown as typeof format;
+	: () => () => normalizeString) as unknown as typeof format;
