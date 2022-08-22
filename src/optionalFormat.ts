@@ -1,6 +1,10 @@
-import { env, stdout } from "node:process";
 import { format } from "./format.js";
 import { normalizeString } from "./normalizeString.js";
+
+// We try to get `process` from `globalThis`
+const { process: { env, stdout } = {} } = globalThis as Partial<
+	typeof globalThis
+>;
 
 /**
  * Impure version of `format` which changes depending on the current NodeJS
@@ -19,9 +23,9 @@ import { normalizeString } from "./normalizeString.js";
  * @param process NodeJS `globalThis.process`.
  * @returns Either the formatted string, or just the passed string.
  */
-export const optionalFormat = ((env.NODE_DISABLE_COLORS ?? "") === "" &&
-env.NO_COLOR === undefined &&
-env.TERM !== "dumb" &&
-((env.FORCE_COLOR ?? "1") !== "0" || stdout.isTTY)
+export const optionalFormat = ((env?.NODE_DISABLE_COLORS ?? "") === "" &&
+env?.NO_COLOR === undefined &&
+env?.TERM !== "dumb" &&
+((env?.FORCE_COLOR ?? "1") !== "0" || (stdout?.isTTY ?? false))
 	? format
 	: () => () => normalizeString) as unknown as typeof format;
