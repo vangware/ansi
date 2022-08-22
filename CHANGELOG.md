@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.0.1
+
+-   :bug: `node:process` was a bad idea, let's try to pull `process` from
+    `globalThis`.
+
 ## 4.0.0
 
 -   :fire: remove `formattingEnabled` function. The check is done statically in
