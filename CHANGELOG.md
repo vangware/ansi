@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 4.0.7
+
+-   :arrow_up: dependency upgrade.
+-   :wrench: add `"sideEffects": false` to `package.json`.
+
 ## 4.0.6
 
 -   :arrow_up: dependency upgrade.
