@@ -47,7 +47,7 @@ import { whiteText, redBackground, bold, mix } from "@vangware/ansi";
 console.log(redBackground`Red background text`);
 
 // Or you can mix them!
-const warningText = mix([whiteText, redBackground, bold]);
+const warningText = mix(whiteText, redBackground, bold);
 
 console.log(warningText`Warning!`);
 ```
@@ -55,8 +55,8 @@ console.log(warningText`Warning!`);
 ## Documentation
 
 Documentation can be found [HERE][documentation]. It is auto-generated with
-[typedoc][typedoc] based on the JSDocs and the types in the source. Shouldn't be
-necessary to read this, code editors like [VS Code][vscode] integrate the
+[typedoc][typedoc] based on the JSDocs and the types in the source. It shouldn't
+be necessary to read this; code editors like [VS Code][vscode] integrate the
 documentation in the UI.
 
 ## Changelog
