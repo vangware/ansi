@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 5.0.0
+
+-   :arrow_up: dependency upgrade.
+-   :building_construction: change `mix` to take rest parameters instead of an
+    array.
+
 ## 4.0.7
 
 -   :arrow_up: dependency upgrade.

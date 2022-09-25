@@ -3,7 +3,7 @@ import { mix } from "../dist/mix.js";
 
 const first = format(13)(13);
 const second = format(42)(42);
-const mixed = mix([first, second]);
+const mixed = mix(first, second);
 
 /** @type {import("./index.js").Tests<string>} */
 export default [

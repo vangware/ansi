@@ -7,7 +7,7 @@ import type { Formatter } from "./Formatter.js";
  * @category Common
  * @example
  * ```ts
- * const redTextWhiteBackground = mix([foregroundRed, backgroundWhite]);
+ * const redTextWhiteBackground = mix(foregroundRed, backgroundWhite);
  *
  * redTextWhiteBackground("Vangware");
  * // It can also be used as a tag function for tagged templates:
@@ -17,7 +17,7 @@ import type { Formatter } from "./Formatter.js";
  * @returns Formatter composed of the given formatters.
  */
 export const mix =
-	(formatters: ReadOnlyArray<Formatter>) =>
+	(...formatters: ReadOnlyArray<Formatter>) =>
 	/**
 	 * Function with formatters set in context.
 	 *
