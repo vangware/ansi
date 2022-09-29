@@ -35,7 +35,12 @@ foregroundRed`Hello world!`;
 First:
 
 ```bash
-npm i @vangware/ansi
+# If you use npm
+npm install @vangware/ansi
+# If you use pnpm
+pnpm add @vangware/ansi
+# If you use yarn
+yarn add @vangware/ansi
 ```
 
 And then:
@@ -54,9 +59,9 @@ console.log(warningText`Warning!`);
 
 ## Documentation
 
-Documentation can be found [HERE][documentation]. It is auto-generated with
+Documentation is available [HERE][documentation]. It is auto-generated with
 [typedoc][typedoc] based on the JSDocs and the types in the source. It shouldn't
-be necessary to read this; code editors like [VS Code][vscode] integrate the
+be necessary to read this. Code editors like [VS Code][vscode] integrate the
 documentation in the UI.
 
 ## Changelog
