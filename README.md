@@ -1,8 +1,7 @@
 <img alt="Vangware's ANSI logo" src="./logo.svg" height="128" />
 
-![Build Status][build-status-badge] ![Coverage][coverage-badge]
-![License][license-badge] ![NPM Version][npm-version-badge]
-![Open Issues][open-issues-badge]
+![Coverage][coverage-badge] ![License][license-badge]
+![NPM Version][npm-version-badge] ![Open Issues][open-issues-badge]
 
 📟 Functional CLI ANSI formatter.
 
@@ -74,8 +73,6 @@ Test coverage can be found [HERE][coverage].
 
 <!-- Reference -->
 
-[build-status-badge]:
-	https://img.shields.io/github/workflow/status/vangware/ansi/Test.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/ansi/actions
 [changelog]: https://github.com/vangware/ansi/blob/main/CHANGELOG.md
 [coverage-badge]:
 	https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://coveralls.io/github/vangware/ansi
