@@ -54,7 +54,6 @@ export { mix } from "./mix.js";
 export { normalizeString } from "./normalizeString.js";
 export { optionalFormat } from "./optionalFormat.js";
 export { resetToInitialState } from "./resetToInitialState.js";
-``;
 export { scrollDown } from "./scrollDown.js";
 export { scrollUp } from "./scrollUp.js";
 export { selectGraphicRendition } from "./selectGraphicRendition.js";
