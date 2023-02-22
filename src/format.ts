@@ -1,6 +1,6 @@
-import type { ReadOnlyArray } from "@vangware/types";
-import { ansi } from "./ansi.js";
+import type { Formatter } from "./Formatter.js";
 import { normalizeString } from "./normalizeString.js";
+import { selectGraphicRendition } from "./selectGraphicRendition.js";
 
 /**
  * Given an `open`, a `close` value and an `input` string, return formatted
@@ -19,8 +19,7 @@ import { normalizeString } from "./normalizeString.js";
 export const format =
 	<Close extends number>(close: Close) =>
 	<Open extends number>(open: Open) =>
-	(
-		input: Readonly<TemplateStringsArray> | string,
-		...expressions: ReadOnlyArray
-	) =>
-		`${ansi(open)}${normalizeString(input, ...expressions)}${ansi(close)}`;
+	(...input: Readonly<Parameters<Formatter>>) =>
+		`${selectGraphicRendition(open)}${normalizeString(
+			...input,
+		)}${selectGraphicRendition(close)}`;
