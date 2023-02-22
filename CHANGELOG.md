@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 6.0.0
+
+-   ⬆️ dependency upgrade.
+-   🔥 remove `ansi`.
+-   ✨ add `controlSequenceIntroducer`.
+-   ✨ add `cursorBack`.
+-   ✨ add `cursorDown`.
+-   ✨ add `cursorForward`.
+-   ✨ add `cursorHorizontalAbsolute`.
+-   ✨ add `cursorNextLine`.
+-   ✨ add `cursorPreviousLine`.
+-   ✨ add `cursorUp`.
+-   ✨ add `eraseInDisplay`.
+-   ✨ add `eraseInLine`.
+-   ✨ add `escapeSequence`.
+-   ✨ add `resetToInitialState`.
+-   ✨ add `scrollDown`.
+-   ✨ add `scrollUp`.
+-   ✨ add `selectGraphicRendition`.
+
 ## 5.0.14
 
 -   ⬆️ dependency upgrade.
