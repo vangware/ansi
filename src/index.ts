@@ -1,3 +1,4 @@
+export type { Formatter } from "./Formatter.js";
 export { backgroundBlack } from "./backgroundBlack.js";
 export { backgroundBlue } from "./backgroundBlue.js";
 export { backgroundBrightBlue } from "./backgroundBrightBlue.js";
@@ -47,7 +48,6 @@ export { foregroundRed } from "./foregroundRed.js";
 export { foregroundWhite } from "./foregroundWhite.js";
 export { foregroundYellow } from "./foregroundYellow.js";
 export { format } from "./format.js";
-export type { Formatter } from "./Formatter.js";
 export { inverse } from "./inverse.js";
 export { italic } from "./italic.js";
 export { mix } from "./mix.js";
