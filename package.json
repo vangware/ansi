@@ -7,7 +7,10 @@
 		"name": "Vangware",
 		"url": "https://vangware.com"
 	},
-	"bugs": "https://github.com/vangware/ansi/issues",
+	"bugs": {
+		"email": "issues@vangware.com",
+		"url": "https://github.com/vangware/ansi/issues"
+	},
 	"dependencies": {
 		"@vangware/types": "^5.1.3"
 	},
