@@ -1,4 +1,4 @@
-import { format } from "../dist/format.js";
+import { format } from "../src/format.js";
 
 /** @type {import("./index.js").Tests<string>} */
 export default [

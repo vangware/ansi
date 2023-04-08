@@ -1,5 +1,5 @@
-import { format } from "../dist/format.js";
-import { mix } from "../dist/mix.js";
+import { format } from "../src/format.js";
+import { mix } from "../src/mix.js";
 
 const first = format(13)(13);
 const second = format(42)(42);

@@ -1,4 +1,4 @@
-import { normalizeString } from "../dist/normalizeString.js";
+import { normalizeString } from "../src/normalizeString.js";
 
 /** @type {import("./index.js").Tests<string>} */
 export default [

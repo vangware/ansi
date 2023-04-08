@@ -1,4 +1,4 @@
-import { controlSequenceIntroducer } from "../dist/controlSequenceIntroducer.js";
+import { controlSequenceIntroducer } from "../src/controlSequenceIntroducer.js";
 
 /** @type {import("./index.js").Tests<string>} */
 export default [
