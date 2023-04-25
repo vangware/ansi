@@ -3,73 +3,57 @@
 ![Coverage][coverage-badge] ![License][license-badge]
 ![NPM Version][npm-version-badge] ![Open Issues][open-issues-badge]
 
-📟 Functional CLI ANSI formatter.
+📟 Functional CLI ANSI formatting functions.
 
 ## Usage
 
-This package can be installed as a dependency or used directly.
+### 📦 Node
 
-### Usage as ECMAScript module
+Install `@vangware/ansi` as a dependency:
 
-🦕 In JS or [deno][deno]:
-
-```js
-import { foregroundRed } from "https://esm.sh/@vangware/ansi";
-
-foregroundRed`Hello world!`;
+```bash
+pnpm add @vangware/ansi
+# or
+npm install @vangware/ansi
+# or
+yarn add @vangware/ansi
 ```
 
-🌎 Or in the browser:
+Import it and use it:
+
+```typescript
+import { foregroundRed } from "@vangware/ansi";
+
+foregroundRed`Hello world!`; // "Hello world!" in red text.
+```
+
+### 🦕 Deno
+
+Import `@vangware/ansi` using the `npm:` prefix, and use it directly:
+
+```typescript
+import { foregroundRed } from "npm:@vangware/ansi";
+
+foregroundRed`Hello world!`; // "Hello world!" in red text.
+```
+
+### 🌎 Browser
+
+Import `@vangware/ansi` using [esm.sh][esm.sh], and use it directly:
 
 ```html
 <script type="module">
 	import { foregroundRed } from "https://esm.sh/@vangware/ansi";
 
-	foregroundRed`Hello world!`;
+	foregroundRed`Hello world!`; // "Hello world!" in red text.
 </script>
 ```
 
-### Usage with local installation
+## Useful links
 
-First:
-
-```bash
-# If you use npm
-npm install @vangware/ansi
-# If you use pnpm
-pnpm add @vangware/ansi
-# If you use yarn
-yarn add @vangware/ansi
-```
-
-And then:
-
-```js
-import { whiteText, redBackground, bold, mix } from "@vangware/ansi";
-
-// You can just use the styles
-console.log(redBackground`Red background text`);
-
-// Or you can mix them!
-const warningText = mix(whiteText, redBackground, bold);
-
-console.log(warningText`Warning!`);
-```
-
-## Documentation
-
-Documentation is available [HERE][documentation]. It is auto-generated with
-[typedoc][typedoc] based on the JSDocs and the types in the source. It shouldn't
-be necessary to read this. Code editors like [VS Code][vscode] integrate the
-documentation in the UI.
-
-## Changelog
-
-Changelog can be found [HERE][changelog].
-
-## Test coverage
-
-Test coverage can be found [HERE][coverage].
+-   📝 [Documentation][documentation]: TypeDoc generated documentation.
+-   ⏳ [Changelog][changelog]: List of changes between versions.
+-   ✅ [Tests Coverage][coverage]: Coveralls page with tests coverage.
 
 <!-- Reference -->
 
@@ -77,8 +61,8 @@ Test coverage can be found [HERE][coverage].
 [coverage-badge]:
 	https://img.shields.io/coveralls/github/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://coveralls.io/github/vangware/ansi
 [coverage]: https://coveralls.io/github/vangware/ansi
-[deno]: https://deno.land/
 [documentation]: https://ansi.vangware.com
+[esm.sh]: https://esm.sh
 [license-badge]:
 	https://img.shields.io/npm/l/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/ansi/blob/main/LICENSE
 [npm-version-badge]:
