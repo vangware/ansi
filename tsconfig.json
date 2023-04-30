@@ -12,6 +12,6 @@
 		"./src/**/*.mts",
 		"./src/**/*.ts",
 		"./src/**/*.tsx",
-		"./tests/*.js"
+		"./tests/**/*.ts"
 	]
 }

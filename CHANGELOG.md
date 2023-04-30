@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 6.3.0
+
+-   ⬆️ dependency upgrade.
+-   🏗 change types a little so they are more transparent than before.
+-   ✅ update tests to be written in TypeScript and make use of `node:test`.
+
 ## 6.2.5
 
 -   🔧 update `engines` to suggest `node@>=19` (something isn't right with
