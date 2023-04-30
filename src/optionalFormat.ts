@@ -32,4 +32,4 @@ export const optionalFormat = (({ process: { env = {}, stdout = {} } = {} }) =>
 		? format
 		: () => () => normalizeString)(
 	(globalThis as Maybe<Partial<typeof globalThis>>) ?? {},
-);
+) as typeof format;

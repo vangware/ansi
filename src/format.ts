@@ -1,4 +1,4 @@
-import type { Formatter } from "./Formatter.js";
+import type { ReadOnlyArray } from "@vangware/types";
 import { normalizeString } from "./normalizeString.js";
 import { selectGraphicRendition } from "./selectGraphicRendition.js";
 
@@ -15,7 +15,6 @@ import { selectGraphicRendition } from "./selectGraphicRendition.js";
  * // It can also be used as a tag function for tagged templates:
  * format(13)(42)`Vangware`; // "\x1b[42mVangware\x1b[13m"
  * ```
- * @see {@link Formatter}
  * @see {@link selectGraphicRendition}
  * @see {@link normalizeString}
  *
@@ -33,15 +32,20 @@ export const format =
 	 * @param open Open string.
 	 * @returns Curried function with `close` and `open` in context.
 	 */
-	<const Open extends number>(open: Open): Formatter =>
+	<const Open extends number>(open: Open) =>
 	/**
 	 * {@link format} function with `close` and `open` set.
 	 * @see {@link format}
 	 *
-	 * @param input Input string (`Formatter` arguments).
+	 * @param input Input string or `TemplateStringArray` (when using tagged templates).
+	 * @param expressions Input expressions (when using tagged templates)
 	 * @returns Formatted `input` string.
 	 */
-	(...input) =>
+	<Input extends TemplateStringsArray | string>(
+		input: Input,
+		...expressions: ReadOnlyArray
+	) =>
 		`${selectGraphicRendition(open)}${normalizeString(
-			...input,
-		)}${selectGraphicRendition(close)}`;
+			input,
+			...expressions,
+		)}${selectGraphicRendition(close)}` as const;
