@@ -69,5 +69,3 @@ Import `@vangware/ansi` using [esm.sh][esm.sh], and use it directly:
 	https://img.shields.io/npm/v/@vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://npm.im/@vangware/ansi
 [open-issues-badge]:
 	https://img.shields.io/github/issues/vangware/ansi.svg?style=for-the-badge&labelColor=666&color=0a8&link=https://github.com/vangware/ansi/issues
-[typedoc]: https://typedoc.org/
-[vscode]: https://code.visualstudio.com/
