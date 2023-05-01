@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 -   This project adheres to [Semantic Versioning][semver].
 -   This project uses [Gitmoji][gitmoji]
 
+## 6.3.1
+
+-   🐛 fix bug with paths.
+
 ## 6.3.0
 
 -   ⬆️ dependency upgrade.
