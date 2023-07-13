@@ -11,9 +11,10 @@ export const test = (fileURL: string) => {
 
 	return <Value = unknown>(...tests: Tests<Value>) =>
 		describe(relativePath, _ =>
-			tests.forEach(({ given, must, received, wanted }) =>
-				it(`Given ${given}, must ${must}.`, async () =>
-					deepEqual(await received(), await wanted())),
+			tests.forEach(
+				({ given, must, received, wanted }) =>
+					void it(`Given ${given}, must ${must}.`, async () =>
+						deepEqual(await received(), await wanted())),
 			),
 		);
 };
