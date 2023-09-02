@@ -12,7 +12,7 @@
 		"url": "https://github.com/vangware/ansi/issues"
 	},
 	"dependencies": {
-		"@vangware/types": "^6.2.1"
+		"@vangware/types": "^6.2.2"
 	},
 	"devDependencies": {
 		"@evilmartians/lefthook": "^1.4.9",
