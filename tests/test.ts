@@ -1,3 +1,4 @@
+import type { Maybe } from "@vangware/types";
 import { deepEqual } from "node:assert/strict";
 import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
@@ -5,7 +6,8 @@ import type { Tests } from "./types/Tests.js";
 
 export const test = (fileURL: string) => {
 	const relativePath = fileURLToPath(fileURL).replace(
-		globalThis.process.cwd(),
+		(globalThis.process as Maybe<(typeof globalThis)["process"]>)?.cwd() ??
+			"",
 		".",
 	);
 
